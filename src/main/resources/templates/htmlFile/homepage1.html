@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+<head>
+    <title>1Movies Review System Home</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+            padding: auto;
+            }
+        }
+
+        .header {
+            padding: 0px;
+            text-align: center;
+            justify-content: center;
+            background: skyblue;
+            color: white;
+            font-size: 12px;
+        }
+        
+        h1{
+            margin : 0;
+            padding : 0;
+            display : flex;
+            align-items : center;
+            justify-content: center;
+            min-height : 20vh;
+            font-family : 'Barlow Condensed' , sans-selif;
+            background-color: skyblue;
+        }
+
+        nav{
+            margin : 0;
+            padding: 20px;
+            position: sticky;
+            display : flex;
+            align-items : center;
+            justify-content: center;
+            min-height : 1vh;
+            background-color: lightblue;
+        }
+
+
+        a{
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            float: center;  
+            font-size: 220%;  
+        }
+        
+        
+        
+        
+        .radio
+        {
+            display: none;
+        }
+        
+
+        
+        
+        body {
+            background: lightblue;
+        }
+        
+        section
+        {
+            margin: 110px;
+            margin-left: 22%;
+            margin-top: 4%;
+        }
+        
+        
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: skyblue;
+            background-color: skyblue;
+            color: black;
+            text-align: center;
+            font-size: x-large;
+            }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <form th:action="@{/reg1}" method="post">
+
+        <nav class="header">
+            <a href="homepage1.html" style="font-family: elephant; color: rgb(208, 4, 4) ">User</a>
+            <a href="adminpage2.html" style="font-family: elephant; color: red ">Admin</a>
+        </nav>
+
+        <header>
+            <h1 style="font-family: elephant">MOVIES REVIEW SYSTEM</h1>
+        </header>
+        
+    
+    
+        <section action="/action_page.php">
+            <label for="MOVIE TICKET MRS NUMBER " style="font-family: elephant; font-size: xx-large;margin-left: 6%;color: red;">MOVIE TICKET MRS NUMBER </label>
+            <br>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="MRS_Number" name="MRS_Number" autocomplete="off" style="background-color: white;font-size: xx-large;margin-left: 18%;font-family: elephant;color: rgb(75, 198, 239);" required><br><br><br><br>
+            <input type="submit" value="Submit" style="font-family: elephant; background-color:white;margin-left: 34%;font-size: xx-large;">
+        </section>
+    </form>
+  
+
+    <div class="footer" style="font-size: 20px;">
+        <p style="font:xx-large">
+            <marquee direction="right"> 
+            PVR THEATER PULZION MALL, DELHI(MOVIE NAME)
+            </marquee>
+        </p>
+    </div>
+    
+</body>
+
+
+
+</html>
